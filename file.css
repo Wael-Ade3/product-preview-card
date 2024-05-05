@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --font-size: 14px;
+    --fraunces:"Fraunces", serif;
+    --montserrat:"Montserrat", sans-serif;
+}
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+}
+h1
+h2
+h3
+h4
+h5
+p
+{
+    overflow-wrap: break-word;
+}
+.card{
+    width: 90%;
+   
+    background-color: var(--White);
+    border-radius: 10px;
+}
+.card .left .mobile {
+    width: 100%;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+
+}
+.card .left .desktop{
+    display: none;
+}
+.card .right   {
+    padding: 20px;
+}
+.card .right .info :first-child {
+    font-family: var(--montserrat);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--Darkgrayishblue);
+    font-weight: 500;
+}
+.card .right .info :nth-child(2) {
+    margin: 15px auto;
+    line-height: 30px;
+    font-family: var(--fraunces);
+    font-weight: 700;
+}
+.card .right .info :nth-child(3) {
+    margin-bottom: 20px;
+    font-size: var(--font-size);
+    line-height: 25px;   
+    color: var(--Darkgrayishblue);
+    font-family: var(--montserrat);
+    font-weight: 500;
+}
+.card .right .currency {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--fraunces);
+    font-weight: 700;
+    
+}
+.card .right .currency :first-child {
+    color: var(--Darkcyan);
+}
+.card .right .currency :nth-child(2) {
+    text-decoration: line-through;
+    color: var(--Darkgrayishblue);
+    font-weight: 500;
+}
+.card .right .cart {
+    margin: 20px auto   ;
+    background-color: var(--Darkcyan);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    transition: .2s ease;
+}
+.card .right .cart :nth-child(2){
+    color:var(--White);
+    font-family: var(--montserrat);
+    font-weight: 700;
+}
+.card .right .cart:hover{
+    opacity: 80%;
+    cursor: pointer; 
+}
+/* desktop 1440px */
+@media (min-width:1440px){
+    .card {
+        width:1000px;
+        display: flex;
+    }
+    .card .left .mobile {
+        display: none;
+    
+    }
+    .card .left .desktop{
+        display: inline-block;
+        width: 497px;
+        height: 431px;
+
+    
+    }
+    .card .right {
+        width: 100%;
+        padding: 5%;
+    }
+    
+}
+
+
+
