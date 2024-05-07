@@ -1,4 +1,7 @@
+/* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Root variables */
 :root{
     --Darkcyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
@@ -6,14 +9,17 @@
     --Darkgrayishblue: hsl(228, 12%, 48%);
     --White: hsl(0, 0%, 100%);
     --font-size: 14px;
-    --fraunces:"Fraunces", serif;
-    --montserrat:"Montserrat", sans-serif;
+    --fraunces: "Fraunces", serif;
+    --montserrat: "Montserrat", sans-serif;
 }
+
+/* Global styles */
 *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 }
+
 body{
     width: 100%;
     height: 100vh;
@@ -22,33 +28,35 @@ body{
     align-items: center;
     background-color: var(--Cream);
 }
-h1
-h2
-h3
-h4
-h5
-p
-{
+
+/* Typography adjustments */
+h1, h2, h3, h4, h5, p {
     overflow-wrap: break-word;
 }
+
+/* Card styles */
 .card{
     width: 90%;
-   
     background-color: var(--White);
     border-radius: 10px;
 }
+
+/* Left section styles */
 .card .left .mobile {
     width: 100%;
-    border-top-left-radius:10px ;
-    border-top-right-radius:10px ;
-
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .card .left .desktop{
     display: none;
 }
-.card .right   {
+
+/* Right section styles */
+.card .right {
     padding: 20px;
 }
+
+/* Info section styles */
 .card .right .info :first-child {
     font-family: var(--montserrat);
     text-transform: uppercase;
@@ -70,6 +78,8 @@ p
     font-family: var(--montserrat);
     font-weight: 500;
 }
+
+/* Currency section styles */
 .card .right .currency {
     display: flex;
     flex-direction: row;
@@ -77,7 +87,6 @@ p
     gap: 20px;
     font-family: var(--fraunces);
     font-weight: 700;
-    
 }
 .card .right .currency :first-child {
     color: var(--Darkcyan);
@@ -87,8 +96,10 @@ p
     color: var(--Darkgrayishblue);
     font-weight: 500;
 }
+
+/* Cart section styles */
 .card .right .cart {
-    margin: 20px auto   ;
+    margin: 20px auto;
     background-color: var(--Darkcyan);
     display: flex;
     justify-content: center;
@@ -108,9 +119,10 @@ p
     cursor: pointer; 
 }
 
-@media (min-width:1000px){
+/* Media query for larger screens */
+@media (min-width: 1000px){
     .card {
-        width:700px;
+        width: 700px;
         display: flex;
     }
     .card .left .mobile {
@@ -134,10 +146,5 @@ p
     }
     .card .right .info p {
         padding-right: 20px;
-
     }
-    
 }
-
-
-
