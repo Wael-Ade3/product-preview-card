@@ -108,7 +108,7 @@ p
     cursor: pointer; 
 }
 /* desktop 1440px */
-@media (min-width:1440px){
+@media (min-width:1000px){
     .card {
         width:1000px;
         display: flex;
