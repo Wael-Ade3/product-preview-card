@@ -107,26 +107,34 @@ p
     opacity: 80%;
     cursor: pointer; 
 }
-/* desktop 1440px */
+
 @media (min-width:1000px){
     .card {
-        width:1000px;
+        width:700px;
         display: flex;
     }
     .card .left .mobile {
         display: none;
-    
+    }
+    .card .left {
+        width: 50%;
     }
     .card .left .desktop{
-        display: inline-block;
-        width: 497px;
-        height: 431px;
-
-    
+        display: block;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
     .card .right {
-        width: 100%;
-        padding: 5%;
+        width: 50%;
+        padding: 50px;
+    }
+    .card .right .info h1 {
+        padding-right: 20px;
+    }
+    .card .right .info p {
+        padding-right: 20px;
+
     }
     
 }
